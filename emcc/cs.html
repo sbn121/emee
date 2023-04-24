@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Noto+Sans+KR:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>emee</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="d-none">emee홈페이지</h1>
+      <div class="gnb">
+        <div class="gnb-wrap">
+          <button type="submit">
+            <img src="images/btn_close.png" alt="닫기" />
+          </button>
+          <div class="gnb-logo">
+            <img src="images/gnb_logo.png" alt="gnb로고" />
+          </div>
+          <ul class="menu1">
+            <li>
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+          </ul>
+          <ul class="menu2">
+            <li>
+              <a href="#">물관리자동화 시스템</a>
+            </li>
+            <li>
+              <a href="#">생산제품</a>
+            </li>
+            <li>
+              <a href="cs.html">고객센터</a>
+            </li>
+            <li>
+              <a href="#">이미그룹소개</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-wrap">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="#"><img src="images/logo.png" alt="로고" /></a>
+          </div>
+          <div class="header-menu">
+            <a href="#"><img src="images/btn_menu.png" alt="메뉴 버튼" /></a>
+          </div>
+        </div>
+        <div class="header-slogan">
+          <img src="images/slogan.png" alt="슬로건" />
+        </div>
+      </div>
+    </header>
+    <section>
+      <article>
+        <div class="road">
+            <h2>오시는 길</h2>
+            <div id="map"></div>
+            <table class="road_tbl">
+                <tr>
+                    <th>
+                        <img src="images/bus.png" alt="버스">
+                    </th>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="images/subway.png" alt="지하철">
+                    </th>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="images/flight.png" alt="비행기">
+                    </th>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                    <td>
+                        <p>19번</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact">
+            <h2>연락처</h2>
+            <p>062) 670-0300</p>
+        </div>
+      </article>
+    </section>
+    <aside>
+      <div class="aside-wrap">
+        <p>(주)이미그룹</p>
+        <p>사람과 자연 모두가 행복한 세상,</p>
+        <p>이미가 만들어 가고자 하는 미래입니다.</p>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-wrap">
+          <div class="phone">
+            <a href="#">
+              <img src="images/icon_call.png" alt="전화 이미지" />
+              <p>062) 670-0300</p>
+            </a>
+          </div>
+          <div class="go-top">
+            <a href="#">
+              <img src="images/btn_top.gif" alt="맨위로" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-wrap">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="images/footer_logo.png" alt="footer로고" />
+          </a>
+        </div>
+        <div class="address">
+          <p>
+            (주)이미그룹 대표이사:이미 본사:광주광역시 서구 쌍촌동
+            한울직업전문학교 4충 401호 연구소:광주광역시 서구 쌍촌동
+            한울직업전문학교 4층 401호 왼쪽 세번째 줄 창가 자리
+          </p>
+          <p>
+            고객센터:062-1234-5678 팩스:062-1234-5679 이메일:already@hanmail.net
+          </p>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHT(C) 2012 DAEYOUNG.CO.LTD ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=daa7c0e74f4dd4c1ae06d1065bbbbf86"
+    ></script>
+    <script>
+      var container = document.getElementById("map"); //지도를 담을 영역의 DOM 레퍼런스
+      var options = {
+        //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+        level: 3, //지도의 레벨(확대, 축소 정도)
+      };
+
+      var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
+  </body>
+</html>

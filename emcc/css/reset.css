@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+ul, il {
+    list-style-type: none;
+}
+a, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+.d-none {
+    display: none;
+}
